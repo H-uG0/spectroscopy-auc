@@ -11,7 +11,7 @@ This tool allows you to easily compute the integrated area between reference and
 ## Features
 
 - **Automated Processing**: Process multiple spectroscopy `.tif` images in a batch.
-- **Robust Algorithms**: Extracts Reference and Sample profiles, aligns backgrounds, and calculates AUC using standard numerical integration or spline-based curves.
+- **Robust Algorithms**: Extracts Reference and Sample profiles, and calculates AUC using standard numerical integration or spline-based curves.
 - **Interactive UI**: A Streamlit web application to visualize the spectral curves, analyze differences, and tune processing parameters visually.
 - **Flexible Data Export**: Outputs results to easily consumable CSV files.
 - **Simulations**: Includes scripts to generate test datasets for validation.
@@ -57,10 +57,11 @@ python -m streamlit run src/ui/app.py
 ```
 
 This will open a browser window where you can:
-- Select a directory or upload a `.json` configuration file.
+- Uupload `.tif` files.
 - View the reference and sample spectral profiles.
 - Visualize the calculated area over the background.
 - Adjust axis scaling and units.
+- Export results to CSV files.
 
 ### 2. Programmatic Usage
 
